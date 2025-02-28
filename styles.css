@@ -1,0 +1,336 @@
+/* Website background */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #f0efe0;  /* Dark green background like in the example */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Resume container - makes it look like a page */
+        .resume-container {
+            width: 1000%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #f0efe0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            position: relative;
+        }
+        
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        /* Header section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        
+        .header-left {
+            width: 60%;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        
+        .description {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+        
+        .header-center {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #b8d8e8;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: -10px;
+            background-color: transparent;
+            padding: 5px 10px;
+            font-size: 12px;
+            color: #d3a167;
+            border: 1px solid #d3a167;
+            border-radius: 20px;
+            transform: rotate(20deg);
+        }
+        
+        .header-right {
+            width: 30%;
+        }
+        
+        .contact-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        
+        .contact-item {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-text {
+            margin-right: 10px;
+            font-size: 13px;
+        }
+        
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+        
+        .signature {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Main content layout */
+        .main-content {
+            display: flex;
+            margin-bottom: 40px;
+        }
+        
+        .left-column {
+            width: 40%;
+            padding-right: 30px;
+        }
+        
+        .right-column {
+            width: 60%;
+            border-left: 1px solid #d5d5d5;
+            padding-left: 30px;
+        }
+        
+        /* Section styling */
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        /* Awards section */
+        .award-item {
+            margin-bottom: 25px;
+        }
+        
+        .award-header {
+            border: 1px solid #333;
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        
+        .award-year {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .award-description {
+            font-size: 13px;
+            font-style: italic;
+            line-height: 1.5;
+            color: #666;
+        }
+        
+        /* Languages section */
+        .language-item {
+            margin-bottom: 15px;
+        }
+        
+        .language-name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .language-dots {
+            display: flex;
+        }
+        
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 3px;
+        }
+        
+        .dot-filled {
+            background-color: #333;
+        }
+        
+        .dot-partial {
+            background-color: #d3a167;
+        }
+        
+        .dot-empty {
+            background-color: #ddd;
+            border: 1px solid #ccc;
+        }
+        
+        /* References section */
+        .reference-item {
+            margin-bottom: 30px;
+        }
+        
+        .reference-name {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .reference-position {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        
+        .reference-contact {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        /* Timeline sections (Work & Education) */
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: -5px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #d3a167;
+        }
+        
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-year {
+            font-size: 13px;
+            background-color: #f0efe0;
+            border: 1px solid #d3a167;
+            padding: 2px 10px;
+            border-radius: 15px;
+        }
+        
+        .timeline-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-subtitle {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-description {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #666;
+            font-style: italic;
+        }
+        
+        /* Skills section */
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .skills-column {
+            width: 48%;
+        }
+        
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .skill-dots {
+            display: flex;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .resume-container {
+                width: 95%;
+                padding: 20px;
+            }
+            
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .header-left, .header-right {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            .contact-item {
+                justify-content: center;
+            }
+            
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .left-column, .right-column {
+                width: 100%;
+                padding: 0;
+                border: none;
+            }
+            
+            .right-column {
+                margin-top: 30px;
+            }
+        }
